@@ -264,7 +264,7 @@ async def process_successful_payment(message: types.Message):
     user_id = message.from_user.id
     payment_info = message.successful_payment
 
-    async with aiosqlite.connect('burgers.db') as db:  # Исправлено
+    async with aiosqlite.connect('burgers.db') as db:  
         await db.execute('''
             INSERT INTO payments (user_id, payment_id, amount, currency)
             VALUES (?, ?, ?, ?)
