@@ -1,0 +1,4 @@
+TOKEN = ''
+ADMIN_USER_ID = 
+DATABASE_PATH = 'burgers.db'
+GITLAB_ACCESS_TOKEN = ''
